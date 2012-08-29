@@ -33,7 +33,7 @@ public class TestCible {
 
 	@Test
 	public void uneCiblePeutAleatoirementEtreMalus() {
-		GestionnaireDAleasDeTest gestionnaire = creeGestionnaireRetournant(true);
+		GestionnaireDAleasDeTest gestionnaire = creeGestionnaireRetournant(false);
 		cible.setGestionnaire(gestionnaire);
 
 		cible.définisEtat();
@@ -43,7 +43,7 @@ public class TestCible {
 
 	@Test
 	public void uneCiblePeutAleatoirementEtreBonus() {
-		GestionnaireDAleasDeTest gestionnaire = creeGestionnaireRetournant(false);
+		GestionnaireDAleasDeTest gestionnaire = creeGestionnaireRetournant(true);
 		cible.setGestionnaire(gestionnaire);
 
 		cible.définisEtat();

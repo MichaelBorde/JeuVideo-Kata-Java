@@ -38,12 +38,8 @@ public class Cible extends Observable {
 		return malus;
 	}
 
-	public void setMalus(boolean malus) {
-		this.malus = malus;
-	}
-
 	public void définisEtat() {
-		malus = gestionnaire.booleen();
+		malus = !gestionnaire.booleen();
 	}
 
 	public void setGestionnaire(GestionnaireDAleas gestionnaire) {

@@ -5,6 +5,8 @@ import static org.fest.assertions.Assertions.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import doublure.GestionnaireDAleasDeTest;
+
 public class TestScore {
 
 	@Before
@@ -17,6 +19,8 @@ public class TestScore {
 
 	@Test
 	public void toucherUneCibleBonusDonneDesPoints() {
+		metsLaCibleDansLEtat(true);
+
 		cible.tuEsTouchée();
 
 		assertThat(score.valeur).isEqualTo(600);
@@ -24,11 +28,18 @@ public class TestScore {
 
 	@Test
 	public void toucherUneCibleMalusFaitPerdreDesPoints() {
-		cible.setMalus(true);
+		metsLaCibleDansLEtat(false);
 
 		cible.tuEsTouchée();
 
 		assertThat(score.valeur).isEqualTo(400);
+	}
+
+	private void metsLaCibleDansLEtat(boolean bonus) {
+		GestionnaireDAleasDeTest gestionnaire = new GestionnaireDAleasDeTest();
+		gestionnaire.setBooleenARetourner(bonus);
+		cible.setGestionnaire(gestionnaire);
+		cible.définisEtat();
 	}
 
 	private Cible cible;
