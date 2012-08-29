@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class TestCible {
 	@Test
-	public void parDefautUneCibleNEstPasTouchee() {
+	public void parDefautUneCibleNEstPasTouchée() {
 		Cible cible = new Cible(0, 0);
 
 		boolean touchee = cible.isTouchee();

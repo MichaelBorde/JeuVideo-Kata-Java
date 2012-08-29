@@ -6,7 +6,7 @@ import org.junit.Test;
 public class TestScore {
 
 	@Before
-	public void preparation() {
+	public void préparation() {
 		cible = new Cible(0, 0);
 		score = new Score();
 		score.valeur = 500;
@@ -15,7 +15,7 @@ public class TestScore {
 
 	@Test
 	public void toucherUneCibleBonusDonneDesPoints() {
-		cible.tuEsTouchee();
+		cible.tuEsTouchée();
 
 		assertThat(score.valeur).isEqualTo(600);
 	}
@@ -24,7 +24,7 @@ public class TestScore {
 	public void toucherUneCibleMalusFaitPerdreDesPoints() {
 		cible.setMalus(true);
 
-		cible.tuEsTouchee();
+		cible.tuEsTouchée();
 
 		assertThat(score.valeur).isEqualTo(400);
 	}

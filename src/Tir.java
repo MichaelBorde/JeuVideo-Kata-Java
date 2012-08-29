@@ -6,7 +6,7 @@ public class Tir {
 
 	public void vise(Cible cible) {
 		if (x == cible.getX() && y == cible.getY()) {
-			cible.tuEsTouchee();
+			cible.tuEsTouchée();
 		}
 	}
 

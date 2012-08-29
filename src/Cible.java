@@ -11,7 +11,7 @@ public class Cible extends Observable {
 		return touchee;
 	}
 
-	public void tuEsTouchee() {
+	public void tuEsTouchée() {
 		this.touchee = true;
 		setChanged();
 		notifyObservers();
