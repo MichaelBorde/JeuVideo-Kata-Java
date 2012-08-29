@@ -1,3 +1,5 @@
+package domaine;
+
 import static org.fest.assertions.Assertions.*;
 
 import org.junit.Before;
@@ -6,7 +8,7 @@ import org.junit.Test;
 public class TestScore {
 
 	@Before
-	public void préparation() {
+	public void preparation() {
 		cible = new Cible(0, 0);
 		score = new Score();
 		score.valeur = 500;

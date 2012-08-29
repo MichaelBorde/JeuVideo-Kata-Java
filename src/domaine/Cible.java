@@ -1,4 +1,9 @@
+package domaine;
+
 import java.util.Observable;
+
+import outil.GestionnaireDAleas;
+import outil.GestionnaireDAleasDeProd;
 
 public class Cible extends Observable {
 
@@ -25,6 +30,10 @@ public class Cible extends Observable {
 		return y;
 	}
 
+	public boolean isBonus() {
+		return !isMalus();
+	}
+
 	public boolean isMalus() {
 		return malus;
 	}
@@ -33,8 +42,17 @@ public class Cible extends Observable {
 		this.malus = malus;
 	}
 
+	public void définisEtat() {
+		malus = gestionnaire.booleen();
+	}
+
+	public void setGestionnaire(GestionnaireDAleas gestionnaire) {
+		this.gestionnaire = gestionnaire;
+	}
+
 	private boolean touchee;
 	private final int x;
 	private final int y;
 	private boolean malus;
+	private GestionnaireDAleas gestionnaire = new GestionnaireDAleasDeProd();
 }

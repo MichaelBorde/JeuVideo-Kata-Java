@@ -1,3 +1,5 @@
+package domaine;
+
 import static org.fest.assertions.Assertions.*;
 
 import org.junit.Test;
