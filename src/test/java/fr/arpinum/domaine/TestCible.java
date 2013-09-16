@@ -1,11 +1,11 @@
-package domaine;
+package fr.arpinum.domaine;
 
 import static org.fest.assertions.Assertions.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import doublure.GestionnaireDAleasDeTest;
+import fr.arpinum.doublure.GestionnaireDAleasDeTest;
 
 public class TestCible {
 

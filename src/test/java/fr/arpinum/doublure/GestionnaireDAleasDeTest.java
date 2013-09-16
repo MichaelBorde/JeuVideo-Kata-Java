@@ -1,6 +1,6 @@
-package doublure;
+package fr.arpinum.doublure;
 
-import outil.GestionnaireDAleas;
+import fr.arpinum.outil.GestionnaireDAleas;
 
 public class GestionnaireDAleasDeTest implements GestionnaireDAleas {
 	public void setBooleenARetourner(boolean valeur) {

@@ -1,9 +1,9 @@
-package domaine;
+package fr.arpinum.domaine;
 
 import java.util.Observable;
 
-import outil.GestionnaireDAleas;
-import outil.GestionnaireDAleasDeProd;
+import fr.arpinum.outil.GestionnaireDAleas;
+import fr.arpinum.outil.GestionnaireDAleasDeProd;
 
 public class Cible extends Observable {
 

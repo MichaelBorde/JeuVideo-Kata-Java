@@ -1,8 +1,11 @@
-package domaine;
+package fr.arpinum.domaine;
 
 import static org.fest.assertions.Assertions.*;
 
 import org.junit.Test;
+
+import fr.arpinum.domaine.Cible;
+import fr.arpinum.domaine.Tir;
 
 public class TestTir {
 	@Test

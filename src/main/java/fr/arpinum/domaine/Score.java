@@ -1,4 +1,4 @@
-package domaine;
+package fr.arpinum.domaine;
 
 import java.util.Observable;
 import java.util.Observer;

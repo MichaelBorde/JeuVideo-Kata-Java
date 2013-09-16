@@ -1,4 +1,4 @@
-package outil;
+package fr.arpinum.outil;
 
 import static org.fest.assertions.Assertions.*;
 

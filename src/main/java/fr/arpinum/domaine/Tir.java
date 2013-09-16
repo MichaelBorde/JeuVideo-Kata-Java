@@ -1,4 +1,4 @@
-package domaine;
+package fr.arpinum.domaine;
 
 public class Tir {
 	public Tir(int x, int y) {
